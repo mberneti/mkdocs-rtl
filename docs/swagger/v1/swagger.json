@@ -1,0 +1,151 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "TEST APP API",
+    "description": "TEST APP RESTful API Documentations",
+    "contact": {
+      "name": "mohammadreza berneti",
+      "url": "http://berneti.ir",
+      "email": "mberneti@live.com"
+    }
+  },
+  "basePath": "/",
+  "paths": {
+    "/api/v1/accounts/login": {
+      "post": {
+        "tags": [
+          "Accounts"
+        ],
+        "summary": "Login",
+        "operationId": "ApiV1AccountsLoginPost",
+        "consumes": [],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "Tel",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "VerifyCode",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "DeviceName",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "OSName",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "PushId",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/JWTApiView"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/accounts/refreshtoken": {
+      "post": {
+        "tags": [
+          "Accounts"
+        ],
+        "summary": "RefreshToken",
+        "operationId": "ApiV1AccountsRefreshtokenPost",
+        "consumes": [],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "name": "RefreshToken",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/JWTApiView"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/accounts/getverifycode": {
+      "post": {
+        "tags": [
+          "Accounts"
+        ],
+        "summary": "GetVerifyCode",
+        "operationId": "ApiV1AccountsGetverifycodePost",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "Tel",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "JWTApiView": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "refresh_token": {
+          "type": "string"
+        },
+        "expires_in": {
+          "format": "date-time",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "name": "Authorization",
+      "in": "header",
+      "type": "apiKey",
+      "description": "Please insert JWT with Bearer into field"
+    }
+  }
+}
