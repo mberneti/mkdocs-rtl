@@ -24,7 +24,7 @@ pages:
 theme: 'material'
 theme_dir: 'theme'
 extra_css:
-  - 'custom-docs.css?v=1'
+  - 'custom-docs.css'
 
 # Options
 # extra:
