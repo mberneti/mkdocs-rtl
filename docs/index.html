@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta name="robots" content="noindex">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="مستندات REST API آزمایشی">
+      
+      
+        <link rel="canonical" href="http://berneti.ir/">
+      
+      
+        <meta name="author" content="mohammadreza berneti">
+      
+      
+        <link rel="shortcut icon" href="./assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
+    
+    
+      
+        <title>مستندات نرم افزار آزمایشی </title>
+      
+    
+    
+      <script src="./assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      <link rel="stylesheet" href="./assets/stylesheets/application-a20f419c8e.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="./custom-docs.css%3Fv%3D1">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://berneti.ir" title="مستندات نرم افزار آزمایشی " class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            مقدمه
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="جست و جو" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="هیچ سندی یافت نشد" data-md-lang-result-one="یک نتیجه یافت شد" data-md-lang-result-other="# نتیجه یافت شد">
+            برای جست و جو بنویسید
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/mberneti/mkdocs-rtl" title="برو به مخزن" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      mkdocs-rtl
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">فهرست</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="سناریو کلی" class="md-nav__link">
+    سناریو کلی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwt" title="مراحل دریافت توکن JWT" class="md-nav__link">
+    مراحل دریافت توکن JWT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="شیوه احراز هویت" class="md-nav__link">
+    شیوه احراز هویت
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="انواع سرویس‌ها" class="md-nav__link">
+    انواع سرویس‌ها
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-swagger" title="API تعاملی swagger" class="md-nav__link">
+    API تعاملی swagger
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                      <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
+    مستندات نرم افزار آزمایشی 
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/mberneti/mkdocs-rtl" title="برو به مخزن" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      mkdocs-rtl
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        مقدمه
+      </label>
+    
+    <a href="." title="مقدمه" class="md-nav__link md-nav__link--active">
+      مقدمه
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">فهرست</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="سناریو کلی" class="md-nav__link">
+    سناریو کلی
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwt" title="مراحل دریافت توکن JWT" class="md-nav__link">
+    مراحل دریافت توکن JWT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="شیوه احراز هویت" class="md-nav__link">
+    شیوه احراز هویت
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="انواع سرویس‌ها" class="md-nav__link">
+    انواع سرویس‌ها
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-swagger" title="API تعاملی swagger" class="md-nav__link">
+    API تعاملی swagger
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      سرویس‌ها
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        سرویس‌ها
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="accounts-services/" title="احراز هویت" class="md-nav__link">
+      احراز هویت
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="rest-api">مستندات REST API نرم افزار آزمایشی<a class="headerlink" href="#rest-api" title="Permanent link">⚓</a></h1>
+<h2 id="_1">سناریو کلی<a class="headerlink" href="#_1" title="Permanent link">⚓</a></h2>
+<p>در این سیستم برای احراز هویت کاربر از روش Token-Based Authentication با استفاده از استاندارد JWT انجام می‌شه. <br />
+به غیر از متد دریافت کد احراز هویت و متد دریافت توکن JWT برای دسترسی به متدهای دیگر سرویس‌های سیستم جاری نیاز به احراز هویت کاربر (ارسال توکن jwt از طریق هدر) می‌باشد.</p>
+<h2 id="jwt">مراحل دریافت توکن JWT<a class="headerlink" href="#jwt" title="Permanent link">⚓</a></h2>
+<p>۱ـ ابتدا یک در خواست دریافت کد احراز هویت با شماره گیرنده 
+ارسال می‌شود سپس پیامکی حاوی کد احراز هویت از سرور به آن شماره ارسال می‌شود. <br />
+۲ـ سپس با استفاده از کد دریافت شده 
+و شماره گیرنده درخواست ورود به سرور ارسال می‌شود که در پاسخ توکن JWT به همراه کد بروز رسانی توکن
+ JWT و همچنین تاریخ اعتبار توکن دریافت می‌شود. <br /></p>
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<p>کد بروز رسانی توکن امکان دریافت توکن جدید بعد از منقضی شدن 
+اعتبار آن را به وسیله درخواست بروزرسانی کلید JWT فراهم می‌کند.</p>
+</div>
+<h2 id="_2">شیوه احراز هویت<a class="headerlink" href="#_2" title="Permanent link">⚓</a></h2>
+<p>حال برای احراز هویت و دسترسی به سرویس‌های مختلف سیستم کافیست به تمامی درخواست‌ها هدر Authorization  به شیوه زیر اضافه شود.</p>
+<div class="codehilite"><pre><span></span>Authorization: Bearer &lt;JWT-Token&gt;
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<p>احراز هویت (افزودن توکن jwt به هدر Authorization) برای دسترسی به تمام سرویس‌های زیر الزامی است. </p>
+</div>
+<h2 id="_3">انواع سرویس‌ها<a class="headerlink" href="#_3" title="Permanent link">⚓</a></h2>
+<p>۱ـ بخش عمومی<br />
+۲ـ بخش خصوصی (والدین - معلم - مدیر (یا معاون))<br />
+برای دسترسی به متدهای مختلف سرویس‌های مرتبط با یک مدرسه نیاز به افزودن هدر areaKey مرتبط با آن مدرسه است.<br />
+برای دریافت areaKey کافیست درخواست لیست نقش‌های کاربر ارسال شود که در پاسخ لیست نقش‌های یک کاربر در مدرسه به همراه areaKey هر نقش برای دسترسی به سرویس‌های مدرسه دریافت می‌شود.</p>
+<h2 id="api-swagger">API تعاملی swagger<a class="headerlink" href="#api-swagger" title="Permanent link">⚓</a></h2>
+<p>با استفاده از لینک‌های زیر شما می‌توانید به api تعاملی swagger با دو نوع رابط گرافیکی متفاوت دسترسی داشته باشید.
+<p class="cl">
+<a href="/swagger/" target="_blank" class="md-source-file">swagger v1</a>
+<a href="/swagger2/" target="_blank" class="md-source-file">swagger v2</a>
+</p></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="accounts-services/" title="احراز هویت" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  بعدی
+                </span>
+                احراز هویت
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Mohammadreza Berneti
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="./assets/javascripts/application-f3ab9e5ff8.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

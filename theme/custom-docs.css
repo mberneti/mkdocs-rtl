@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('./content/fonts/Shabnam.eot');
+    src: url('./content/fonts/Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('./content/fonts/Shabnam.woff') format('woff'), 
+    url('./content/fonts/Shabnam.woff2') format('woff2'), 
+    url('./content/fonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('./content/fonts/Shabnam-Bold.eot');
+    src: url('./content/fonts/Shabnam-Bold.eot?#iefix') format('embedded-opentype'), 
+    url('./content/fonts/Shabnam-Bold.woff') format('woff'),
+    url('./content/fonts/Shabnam-Bold.woff2') format('woff2'),
+    url('./content/fonts/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body,
+.md-search__input {
+    font-family: 'Shabnam';
+}
+
+.md-search {
+    direction: rtl;
+}
+
+.md-icon.md-search__icon {
+    left: auto;
+    right: 1.2rem;
+}
+
+button.md-icon.md-search__icon {
+    right: auto;
+    left: 1.2rem;
+}
+
+.md-typeset h1 {
+    color: #757575;
+}
+
+.md-content {
+    direction: rtl;
+}
+
+.md-sidebar {
+    direction: rtl;
+}
+
+.codehilite {
+    direction: ltr;
+}
+
+.md-nav--secondary {
+    -webkit-transition: none;
+    transition: none;
+    border-left: none;
+    -webkit-transition: border-right .25s;
+    transition: border-right .25s;
+    border-right: .4rem solid #3f51b5;
+}
+
+.md-typeset ol,
+.md-typeset ul {
+    margin-left: 0;
+    margin-right: .625em;
+}
+
+.md-typeset .headerlink {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.md-typeset .admonition .admonition-title,
+.md-typeset .admonition summary,
+.md-typeset details .admonition-title,
+.md-typeset details summary {
+    margin: -1.2rem -1.2rem 0;
+    padding: .8rem 4rem .8rem 1.2rem;
+    border-bottom: .1rem solid rgba(68, 138, 255, .1);
+    background-color: rgba(68, 138, 255, .1);
+    font-weight: 700;
+}
+
+.md-typeset .admonition .admonition-title:before,
+.md-typeset .admonition summary:before,
+.md-typeset details .admonition-title:before,
+.md-typeset details summary:before {
+    position: absolute;
+    left: auto!important;
+    right: 1.2rem!important;
+    color: #448aff;
+    font-size: 2rem;
+    content: "\E3C9";
+}
+
+.md-typeset .admonition.attention,
+.md-typeset .admonition.caution,
+.md-typeset .admonition.warning,
+.md-typeset details.attention,
+.md-typeset details.caution,
+.md-typeset details.warning {
+    border-color: #ff9100;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+    position: relative;
+    margin: 1.5625em 0;
+    padding: 1.2rem;
+    border-left: none!important;
+    border-right: .4rem solid #448aff;
+    border-radius: .2rem;
+    font-size: 1.28rem;
+}
+
+.md-content article > p.cl {
+    text-align: left;
+}
+.md-content article > p.ci {
+    text-align: center;
+}
+
+.md-source-file {
+    margin: 0;
+    padding-left: .5rem;
+    padding-right: 0;
+}
+
+.md-source-file:before {
+    margin-right: 0;
+    margin-left: .5rem;
+}
+
+.md-nav__item{
+    margin-right: 12px;
+    padding-left: 0;
+}
+@media only screen and (min-width: 76.25em)
+{
+    .md-sidebar__inner {
+        border-left:none;
+        border-right: .1rem solid rgba(0,0,0,.07);
+    }
+}
+
+h3{
+    font-weight: bold!important;
+}
