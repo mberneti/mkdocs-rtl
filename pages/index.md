@@ -34,7 +34,7 @@ Authorization: Bearer <JWT-Token>
 ## API تعاملی swagger
 با استفاده از لینک‌های زیر شما می‌توانید به api تعاملی swagger با دو نوع رابط گرافیکی متفاوت دسترسی داشته باشید.
 <p class="cl">
-<a href="/swagger/" target="_blank" class="md-source-file">swagger v1</a>
-<a href="/swagger2/" target="_blank" class="md-source-file">swagger v2</a>
+<a href="./swagger/" target="_blank" class="md-source-file">swagger v1</a>
+<a href="./swagger2/" target="_blank" class="md-source-file">swagger v2</a>
 </p>
 

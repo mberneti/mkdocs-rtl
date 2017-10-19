@@ -1,17 +1,17 @@
 # سرویس احراز هویت
 #### ۱ـ دریافت کد احراز هویت
-<p class="cl"><a href="/swagger/#!/Accounts/ApiV1AccountsGetverifycodePost" target="_blank" class="md-source-file">
+<p class="cl"><a href="./swagger/#!/Accounts/ApiV1AccountsGetverifycodePost" target="_blank" class="md-source-file">
 Accounts > GetVerifyCode</a></p>
 
 #### ۲ـ ورود با استفاده از کد احراز هویت (دریافت توکن JWT)
 
-<p class="cl"><a href="/swagger/#!/Accounts/ApiV1AccountsLoginPost" target="_blank" class="md-source-file">Accounts > Login</a></p>
+<p class="cl"><a href="./swagger/#!/Accounts/ApiV1AccountsLoginPost" target="_blank" class="md-source-file">Accounts > Login</a></p>
 
 * مقدار پارامتر PushId باید برابر id منحصر بفردی باشد که بوسیله api OneSignal دریافت می‌شود
 
 #### ۳ـ بروز رسانی کلید JWT منقضی شده
 
-<p class="cl"><a href="/swagger/#!/Accounts/ApiV1AccountsRefreshtokenPost" target="_blank" class="md-source-file">Accounts > RefreshToken</a></p>
+<p class="cl"><a href="./swagger/#!/Accounts/ApiV1AccountsRefreshtokenPost" target="_blank" class="md-source-file">Accounts > RefreshToken</a></p>
 
 !!! warning "توجه"
     تمام متدهایی که در پاسخ یک لیست بر می‌گردانند و دارای صفحه‌بندی هستند شماره صفحه را بصورت یک پارامتر page که با مقدار ۱ شروع می‌شود دریافت می‌کنند.
