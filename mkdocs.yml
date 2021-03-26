@@ -15,14 +15,15 @@ docs_dir: 'pages'
 site_dir: 'docs'
 # base_url: 'bb'
 
-pages:
+nav:
     - مقدمه: index.md
     - سرویس‌ها:
       - 'احراز هویت': 'accounts-services.md'
 
 # Documentation and theme
-theme: 'material'
-theme_dir: 'theme'
+theme:
+    name: 'material'
+    custom_dir: 'theme'
 extra_css:
   - 'custom-docs.css'
 
@@ -51,5 +52,5 @@ extra_css:
 # Extensions
 markdown_extensions:
   - admonition
-  - codehilite(guess_lang=false)
-  - toc(permalink=⚓)
+#  - codehilite(guess_lang=false)
+#  - toc(permalink=⚓)
